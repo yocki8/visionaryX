@@ -1,10 +1,15 @@
 import { useState } from "react";
 import React from "react";
 import Marquee from "react-fast-marquee";
+import person1 from "/src/assets/images/persons/person1.png";
+import person2 from "/src/assets/images/persons/person1.png";
+import person3 from "/src/assets/images/persons/person1.png";
+import person4 from "/src/assets/images/persons/person1.png";
 
 const tempData = [
     {
-        imageUrl: "/src/assets/images/persons/person1.png",
+        // imageUrl: "/src/assets/images/persons/person1.png",
+        imageUrl: person1,
         id: 0,
         name: "Siddhant",
         job: "Co-Founder, FabHotels",
