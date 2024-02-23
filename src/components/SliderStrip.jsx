@@ -2,9 +2,9 @@ import { useState } from "react";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import person1 from "/src/assets/images/persons/person1.png";
-import person2 from "/src/assets/images/persons/person1.png";
-import person3 from "/src/assets/images/persons/person1.png";
-import person4 from "/src/assets/images/persons/person1.png";
+import person2 from "/src/assets/images/persons/person2.png";
+import person3 from "/src/assets/images/persons/person3.png";
+import person4 from "/src/assets/images/persons/person4.png";
 
 const tempData = [
     {
@@ -17,7 +17,7 @@ const tempData = [
             "Helping developers convert design to code. In the $1M in $5 AMM journey",
     },
     {
-        imageUrl: "/src/assets/images/persons/person2.png",
+        imageUrl: person2,
         id: 1,
         name: "Siddhant",
         job: "Co-Founder, FabHotels",
@@ -25,7 +25,7 @@ const tempData = [
             "Helping developers convert design to code. In the $1M in $5 AMM journey",
     },
     {
-        imageUrl: "/src/assets/images/persons/person3.png",
+        imageUrl: person3,
         id: 2,
         name: "Siddhant",
         job: "Co-Founder, FabHotels",
@@ -33,7 +33,7 @@ const tempData = [
             "Helping developers convert design to code. In the $1M in $5 AMM journey",
     },
     {
-        imageUrl: "/src/assets/images/persons/person4.png",
+        imageUrl: person4,
         name: "Siddhant",
         id: 3,
         job: "Co-Founder, FabHotels",
