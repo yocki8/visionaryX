@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const tempData = [
     {
-        imageUrl: "/src/assets/images/persons/person1.png",
+        imageUrl: "./assets/images/persons/person1.png",
         id: 0,
         name: "Siddhant",
         job: "Co-Founder, FabHotels",
