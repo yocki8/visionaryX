@@ -6,3 +6,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .cGray {
+        color: #77777c
+        !important
+    }
+}

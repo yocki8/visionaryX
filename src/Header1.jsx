@@ -2,7 +2,8 @@ import headerLogo from "./assets/images/header-logo.svg";
 import headerCompaniesLogo from "./assets/images/header-companies-logo.png";
 import headerBackground from "./assets/images/header-background.webp";
 import SliderStrip from "./components/SliderStrip";
-
+import "animate.css";
+import MemberButton from "./components/MemberButton";
 
 export default function Header1() {
     return (
@@ -29,9 +30,9 @@ export default function Header1() {
                 }}
             ></div>
 
-            <button className="rounded-lg bg-white px-16 py-[10px] text-black">
-                Become a Member
-            </button>
+            <div className="overflow-hidden rounded-[10px] border border-solid border-white p-[2px]">
+                <MemberButton />
+            </div>
 
             <div className="grid place-items-center">
                 <p className="text-xl">

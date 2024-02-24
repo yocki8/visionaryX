@@ -11,7 +11,6 @@ export default function MembershipPara() {
     useGSAP(() => {
         const text = new SplitType(para.current, { types: "chars,words" });
 
-        console.log(text);
         gsap.to(text.chars, {
             color: "white",
             stagger: 0.1,
@@ -27,7 +26,7 @@ export default function MembershipPara() {
     return (
         <p
             ref={para}
-            className="my-40  lg:w-[max(48%,700px)] text-center text-[max(5vw,4rem)] font-semibold leading-[max(6rem,7vw)] text-[#575757]"
+            className="my-40  text-center text-[max(5vw,4rem)] font-semibold leading-[max(6rem,7vw)] text-[#575757] lg:w-[max(48%,700px)]"
         >
             Membership built for ambitious founders, marketing, product &
             business leaders
