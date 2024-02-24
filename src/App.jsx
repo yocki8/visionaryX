@@ -8,7 +8,7 @@ function App() {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="h-full min-h-dvh overflow-hidden bg-[#3b444b] bg-black font-[Gilroy] text-white">
+        <div className=" h-full bg-black font-[Gilroy] text-white">
             <Navbar />
             <Header />
             <Sections />

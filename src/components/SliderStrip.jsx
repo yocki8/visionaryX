@@ -61,7 +61,7 @@ export default function SliderStrip({ flag }) {
 
     return (
         <Marquee
-            className="-mt-4 w-dvw"
+            className="-mt-4"
             speed={flag ? 10 : 15}
             direction={flag ? "right" : "left"}
             pauseOnClick={true}

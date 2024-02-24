@@ -55,13 +55,13 @@ export default function Navbar() {
     return (
         <nav
             ref={nav}
-            className="fixed z-10 flex w-full items-center justify-between px-14 py-3  backdrop-blur-lg"
+            className="fixed z-10 md:flex hidden w-full items-center justify-between px-14 py-3 backdrop-blur-lg "
         >
             <div>
                 <img className="h-10" src={navbarLogo}></img>
             </div>
             <div>
-                <ul className="cGray flex gap-7 text-[0.8rem]">
+                <ul className="cGray hidden gap-7 text-[0.8rem] md:flex ">
                     <NavbarButton name={"learning"} />
                     <NavbarButton name={"Community"} />
                     <NavbarButton name={"Outcomes"} />

@@ -16,8 +16,8 @@ export default function MembershipPara() {
             stagger: 0.1,
             scrollTrigger: {
                 trigger: para.current,
-                start: "top 80%",
-                end: "bottom 80%",
+                start: "top 70%",
+                end: "bottom 70%",
                 scrub: true,
             },
         });
@@ -26,7 +26,7 @@ export default function MembershipPara() {
     return (
         <p
             ref={para}
-            className="my-40  text-center text-[max(5vw,4rem)] font-semibold leading-[max(6rem,7vw)] text-[#575757] lg:w-[max(48%,700px)]"
+            className="my-40 w-[min(90%,900px)] text-center text-[max(5vw,3.5rem)] font-semibold leading-[max(6rem,7vw)] text-[#575757]"
         >
             Membership built for ambitious founders, marketing, product &
             business leaders
