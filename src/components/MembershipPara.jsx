@@ -19,6 +19,7 @@ export default function MembershipPara() {
                 start: "top 70%",
                 end: "bottom 70%",
                 scrub: true,
+                // markers: true,
             },
         });
     });

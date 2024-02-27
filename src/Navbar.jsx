@@ -29,7 +29,7 @@ const NavbarButton = ({ name }) => {
             <button>{name}</button>
             <div
                 ref={underLine}
-                className="mt-1 h-[0.1px] w-0 bg-blue-500"
+                className="mt-1 h-[1px] w-0 bg-blue-500"
             ></div>
         </li>
     );

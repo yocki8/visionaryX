@@ -24,16 +24,15 @@ const Pillar = ({ pillarNo }) => {
 
     useGSAP(() => {
         gsap.from(image.current, {
-            transform: "translateY(16rem)",
+            y: 200,
             opacity: 0,
-            stagger: 0.1,
+            duration: 0.2 + pillarNo * 0.4,
+            animation: "ease-out",
             scrollTrigger: {
                 trigger: image.current,
+                start: `top 75%`,
                 // markers: true,
-                start: `-${200 - pillarNo * 50}px center`,
-                end: `-${80 - pillarNo * 30}px center`,
-                scrub: true,
-                // markers: true,
+                // toggleActions: 'restart none none none',
             },
         });
     });
@@ -49,12 +48,14 @@ const Pillar = ({ pillarNo }) => {
 
 export default function Pillars() {
     return (
-        <div className="m-24 grid w-full place-items-center ">
-            <p className="text-base uppercase   tracking-[0.5rem]">
-                Enabled by
-            </p>
-            <h1 className="text-[4rem]">3 Pillars</h1>
-            <div className="relative w-[min(90%,600px)] -translate-y-20 md:-translate-y-64">
+        <div className="m-24 h-[550px] w-full md:h-[750px] ">
+            <div className="m-auto w-fit">
+                <p className="text-base uppercase tracking-[0.5rem]">
+                    Enabled by
+                </p>
+                <h1 className="text-[4rem]">3 Pillars</h1>
+            </div>
+            <div className="m-auto w-[min(90%,600px)]  -translate-y-20 md:-translate-y-60 ">
                 <Pillar pillarNo={1} />
                 <Pillar pillarNo={2} />
                 <Pillar pillarNo={3} />
